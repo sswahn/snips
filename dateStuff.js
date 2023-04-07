@@ -1,3 +1,3 @@
-const diffBetweenDatesInDays = (date1, date2) => 
-	Math.ceil(Math.abs(date2 - date1) / (1000 * 60 * 60 * 24))
+const diffBetweenDatesInDays = (date1, date2) =>
+  new Date(date2 - date1).getDate() - 1
 
